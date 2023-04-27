@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
 export default function BasicMenu(props) {
   const title = props.title
@@ -37,11 +38,9 @@ export default function BasicMenu(props) {
           'aria-labelledby': 'basic-button',
         }}
       >
-        {lists.map((el) => {
+        {lists.map((el, index) => {
           return (
-            <>
-              <MenuItem onClick={handleClose}>{el.title}</MenuItem>
-            </>
+              <MenuItem key={index} onClick={handleClose} component={Link} to={el.navigate}>{el.title}</MenuItem>
           )
         })}
       </Menu>
