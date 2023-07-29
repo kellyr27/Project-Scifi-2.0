@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ButtonAppBar from './components/Navbar';
 import MovieList from './components/MovieList';
+import { Container } from '@mui/material';
 
 function App() {
   return (
