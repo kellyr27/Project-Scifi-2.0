@@ -35,5 +35,27 @@ export const movies = [
         releaseYears: '1968',
         genres: ["Science Fiction","Mystery", "Adventure"],
         description: `"2001: A Space Odyssey" is a landmark science fiction film directed by Stanley Kubrick. Spanning from prehistoric Earth to space exploration, it follows a mysterious monolith's influence on human evolution and the discovery of an enigmatic signal near Jupiter. A visual and philosophical masterpiece exploring the mysteries of existence and evolution.`,
+    }, {
+        id: 4,
+        type: 2,
+        title: ['A New Hope', 'The Empire Strikes Back', 'Return of the Jedi'],
+        imdbRating: [8.6, 8.7, 8.3],
+        imdbLink: 'https://www.imdb.com/title/tt0076759/',
+        runtime: null,
+        releaseYears: '1977 - 1983',
+        genres: ["Science Fiction","Adventure", "Action"],
+        description: `The original Star Wars trilogy, consisting of "A New Hope," "The Empire Strikes Back," and "Return of the Jedi," is an epic space opera saga. It follows the heroic journey of Luke Skywalker and his allies as they battle the tyrannical Galactic Empire, experiencing epic lightsaber duels, iconic characters, and a timeless battle between good and evil.`,
     }
 ]
+
+// {
+//     id: null,
+//     type: null,
+//     title: null,
+//     imdbRating: null,
+//     imdbLink: null,
+//     runtime: null,
+//     releaseYears: null,
+//     genres: null,
+//     description: null,
+// }

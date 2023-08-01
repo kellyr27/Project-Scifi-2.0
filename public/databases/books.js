@@ -76,3 +76,16 @@ export const books = [
         description: `H.G. Wells' books are pioneering classics of science fiction and speculative fiction. With iconic works like "The War of the Worlds," "The Time Machine," and "The Invisible Man," Wells envisioned extraordinary worlds and technological marvels, exploring themes of alien invasion, time travel, and societal implications that continue to captivate readers across generations.`
     }
 ]
+
+// {
+//     id: null,
+//     title: null,
+//     bookTitles: null,
+//     type: null,
+//     author: null,
+//     releaseYears: null,
+//     pages: null,
+//     numOfBooks: null,
+//     goodreadsLink: null,
+//     description: ``
+// }
