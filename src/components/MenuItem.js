@@ -41,7 +41,7 @@ export default function BasicMenu(props) {
       >
         {lists.map((el, index) => {
           return (
-              <MenuItem key={index} onClick={handleClose} component={Link} to={textToURL(el.name)}>{el.name}</MenuItem>
+              <MenuItem key={index} onClick={handleClose} component={Link} to={textToURL(el.name)} state={el}>{el.name}</MenuItem>
           )
         })}
       </Menu>

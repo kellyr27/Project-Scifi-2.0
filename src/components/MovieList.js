@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import MovieCard from "./MovieCard"
 import Stack from '@mui/material/Stack'
 import { Typography } from "@mui/material"
+import { useLocation } from "react-router-dom"
 
 const test_movie = {
     title: 'Planet of the Apes',
@@ -15,11 +16,14 @@ const test_movie = {
 }
 
 
-const MovieList = () => {
+const MovieList = (props) => {
     const {listTitle} = useParams()
+
+    const location = useLocation()
+    console.log(location.state)
+
     return (
         <>
-            <Typography variant="subtitle1">Movie Lists</Typography>
             <Typography variant="h2" gutterBottom>{listTitle}</Typography>
             <Stack spacing={2} display="flex" alignItems="center">
                 <MovieCard movieData={test_movie}/>
