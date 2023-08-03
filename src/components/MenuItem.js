@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import { textToURL } from '../functions/database';
 
 export default function BasicMenu(props) {
   const title = props.title
@@ -40,7 +41,7 @@ export default function BasicMenu(props) {
       >
         {lists.map((el, index) => {
           return (
-              <MenuItem key={index} onClick={handleClose} component={Link} to={el.navigate}>{el.title}</MenuItem>
+              <MenuItem key={index} onClick={handleClose} component={Link} to={textToURL(el.name)}>{el.name}</MenuItem>
           )
         })}
       </Menu>

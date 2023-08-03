@@ -13,7 +13,7 @@ export const lists = [
         type: 'tv',
         list: [1, 2, 3, 4]
     }, {
-        name: 'Best Scifi Graphic Novels/Comics',
+        name: 'Best Scifi Graphic Novels and Comics',
         description: 'The best science fiction graphic novels and comic book series.',
         type: 'books',
         list: [1, 2]

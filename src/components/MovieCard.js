@@ -36,7 +36,7 @@ export default function MovieCard({movieData}) {
             <Stack direction="row" spacing={1}>
               {movieData.genres.map((el, index) => {
                 return (
-                  <Chip label={el} size="small" variant="outlined"/>
+                  <Chip key={index} label={el} size="small" variant="outlined"/>
                 )
               })}
             </Stack>
@@ -46,9 +46,7 @@ export default function MovieCard({movieData}) {
             <Carousel>
               {movieData.images.map((el, index) => {
                 return (
-                  <>
-                    <img src={el} height="150" alt="movie backdrop"/>
-                  </>
+                    <img key={index} src={el} height="150" alt="movie backdrop"/>
                 )
               })}
             </Carousel>
