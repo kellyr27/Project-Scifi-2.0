@@ -18,8 +18,9 @@ export default function MovieCard({movieData}) {
   return (
     <Card sx={{ maxWidth: 800, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2}>
-        <Grid xs={4} display="flex" justifyContent="center" alignItems="center">
+        <Grid xs={4} container justifyContent="center" alignItems="center" >
           <CardMedia
+              sx={{width: '80%'}}
               component="img"
               alt="movie cover"
               image={movieData.coverImage}
@@ -40,7 +41,7 @@ export default function MovieCard({movieData}) {
                 )
               })}
             </Stack>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" >
               {movieData.description}
             </Typography>
             <Carousel>
