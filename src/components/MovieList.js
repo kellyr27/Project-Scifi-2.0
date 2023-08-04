@@ -22,8 +22,8 @@ const MovieList = () => {
 
     return (
         <>
-            <Typography variant="h2" gutterBottom>{list.name}</Typography>
-            <Typography variant="subtitle1" gutterBottom>{list.description}</Typography>
+            <Typography variant="h2" align="center" gutterBottom>{list.name}</Typography>
+            <Typography variant="subtitle1" align="center" gutterBottom>{list.description}</Typography>
             <Stack spacing={2} display="flex" alignItems="center">
                 <MovieCard movieId={list.list[0]}/>
                 <MovieCard movieId={list.list[1]}/>
