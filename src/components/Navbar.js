@@ -31,7 +31,7 @@ export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{bgcolor: '#231F20'}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -43,9 +43,9 @@ export default function ButtonAppBar() {
             {/* <MenuIcon /> */}
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>Project Scifi</Typography>
-            <BasicMenu title="TV Lists" lists={listsByType['tv']} />
-            <BasicMenu title="Movie Lists" lists={listsByType['movies']} />
-            <BasicMenu title="Book Lists" lists={listsByType['books']} />
+            <BasicMenu title="TV Lists" lists={listsByType['tv']} listType='tv'/>
+            <BasicMenu title="Movie Lists" lists={listsByType['movies']} listType='movies'/>
+            <BasicMenu title="Book Lists" lists={listsByType['books']} listType='books'/>
         </Toolbar>
       </AppBar>
     </Box>

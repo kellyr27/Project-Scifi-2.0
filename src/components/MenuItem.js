@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom';
 import { textToURL } from '../functions/database';
 
 export default function BasicMenu(props) {
-  const title = props.title
-  const lists = props.lists
+  const {title, lists, listType} = props
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -41,7 +40,7 @@ export default function BasicMenu(props) {
       >
         {lists.map((el, index) => {
           return (
-              <MenuItem key={index} onClick={handleClose} component={Link} to={textToURL(el.name)} state={el}>{el.name}</MenuItem>
+              <MenuItem key={index} onClick={handleClose} component={Link} to={`${listType}/${textToURL(el.name)}`} state={el}>{el.name}</MenuItem>
           )
         })}
       </Menu>
