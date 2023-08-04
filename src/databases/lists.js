@@ -16,12 +16,12 @@ export const lists = [
         name: 'Best Scifi Graphic Novels and Comics',
         description: 'The best science fiction graphic novels and comic book series.',
         type: 'books',
-        list: [1, 2]
+        list: [0, 1, 2]
     }, {
         name: 'Best Classic Scifi Books and Series',
         description: 'The best science fiction books and series released before 2000.',
         type: 'books',
-        list: [3]
+        list: [2, 2, 1]
     }
 
 ]

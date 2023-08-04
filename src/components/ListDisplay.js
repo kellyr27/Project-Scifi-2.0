@@ -4,6 +4,7 @@ import { Typography } from "@mui/material"
 import { useLocation } from "react-router-dom"
 import { Box } from '@mui/material';
 import TvCard from "./TvCard";
+import BookCard from "./BookCard";
 
 const test_movie = {
     title: 'Planet of the Apes',
@@ -40,6 +41,11 @@ const ListCards = ({listType, list}) => {
     } else if (listType === 'books') {
         return (
             <>
+                {list.map((el, index) => {
+                    return (
+                        <BookCard key={index} bookId={el}/>
+                    )
+                })}
             </>
         )
     }

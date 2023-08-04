@@ -2,14 +2,15 @@ import Typography from '@mui/material/Typography';
 import { Card, CardMedia, CardContent, CardActions, Button, Stack, Chip } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Carousel from 'react-material-ui-carousel';
-import { tvShows } from '../databases/tvShows';
+import { books } from '../databases/books';
 import {Box} from '@mui/system'
 import '../App.css';
 
 
-export default function TvCard(props) {
-  const tvShowId = props.tvId
-  const tvShow = tvShows[tvShowId]
+export default function BookCard(props) {
+  const bookId = props.bookId
+  const book = books[bookId]
+  console.log('Book is', book)
 
   return (
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>
@@ -19,36 +20,24 @@ export default function TvCard(props) {
             <CardMedia
                 component="img"
                 alt="movie cover"
-                image={tvShow.coverImages[0]}
+                image={book.coverImages[0]}
             />
           </div>
         </Grid>
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>
             <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1}}>
-              {tvShow.title}
+              {book.titles.join(' · ')}
             </Typography>
-            <Typography variant="subtitle1" component="div" align="center" sx={{mb: 0}}>
-              {`${tvShow.numOfSeasons} seasons · ${tvShow.releaseYears}`}
+            <Typography variant="subtitle1" component="div" align="center" sx={{mb: 2}}>
+              {`${book.author} · ${book.releaseYears}`}
             </Typography>
-            <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2}}>
-              {tvShow.genres.join(' · ')}
-            </Typography>
+            {/* <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2}}>
+              {book.genres.join(' · ')}
+            </Typography> */}
             <Typography variant="body1" sx={{mb: 3}}>
-              {tvShow.description}
+              {book.description}
             </Typography>
-            <Carousel animation="fade">
-              {tvShow.otherImages.map((el, index) => {
-                return (
-                  <CardMedia
-                    key={index}
-                    component="img"
-                    alt="movie scenes"
-                    image={el}
-                  />
-                )
-              })}
-            </Carousel>
           </CardContent>
         </Grid>
       </Grid>
