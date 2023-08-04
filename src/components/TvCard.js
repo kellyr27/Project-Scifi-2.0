@@ -5,6 +5,7 @@ import Carousel from 'react-material-ui-carousel';
 import { tvShows } from '../databases/tvShows';
 import {Box} from '@mui/system'
 import '../App.css';
+import { CoverImageMedia } from '../functions/database';
 
 
 export default function TvCard(props) {
@@ -15,13 +16,7 @@ export default function TvCard(props) {
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2} sx={{pl: 2.5, pr: 2.5}}>
         <Grid xs={5} sx={{display: {xs: 'none', sm: 'block'}}}>
-          <div className="ProductDetails">
-            <CardMedia
-                component="img"
-                alt="movie cover"
-                image={tvShow.coverImages[0]}
-            />
-          </div>
+          <CoverImageMedia coverImages={tvShow.coverImages}/>
         </Grid>
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>

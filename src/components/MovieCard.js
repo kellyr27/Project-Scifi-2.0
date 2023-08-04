@@ -5,6 +5,7 @@ import Carousel from 'react-material-ui-carousel';
 import { movies } from '../databases/movies';
 import {Box} from '@mui/system'
 import '../App.css';
+import { CoverImageMedia } from '../functions/database';
 
 const formatRuntime = (runtimeMins) => {
   const hours = Math.floor(runtimeMins / 60)
@@ -17,32 +18,32 @@ const formatRuntime = (runtimeMins) => {
   }
 }
 
-function CoverImageMedia({coverImages}) {
-  if (coverImages.length > 1) {
-    return (
-      <Carousel animation="fade">
-        {coverImages.map((el, index) => {
-          return (
-            <CardMedia
-              key={index}
-              component="img"
-              alt="movie cover"
-              image={el}
-            />
-          )
-        })}
-      </Carousel>
-    )
-  } else {
-    return (
-      <CardMedia
-        component="img"
-        alt="movie cover"
-        image={coverImages[0]}
-      />
-    )
-  }
-}
+// function CoverImageMedia({coverImages}) {
+//   if (coverImages.length > 1) {
+//     return (
+//       <Carousel animation="fade">
+//         {coverImages.map((el, index) => {
+//           return (
+//             <CardMedia
+//               key={index}
+//               component="img"
+//               alt="movie cover"
+//               image={el}
+//             />
+//           )
+//         })}
+//       </Carousel>
+//     )
+//   } else {
+//     return (
+//       <CardMedia
+//         component="img"
+//         alt="movie cover"
+//         image={coverImages[0]}
+//       />
+//     )
+//   }
+// }
 
 
 export default function MovieCard(props) {
@@ -54,9 +55,7 @@ export default function MovieCard(props) {
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2} sx={{pl: 2.5, pr: 2.5}}>
         <Grid xs={5} sx={{display: {xs: 'none', sm: 'block'}}}>
-          <div className="ProductDetails">
-            <CoverImageMedia coverImages={movie.coverImages} />
-          </div>
+          <CoverImageMedia coverImages={movie.coverImages}/>
         </Grid>
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>
