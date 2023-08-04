@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom"
 import MovieCard from "./MovieCard"
 import Stack from '@mui/material/Stack'
 import { Typography } from "@mui/material"
@@ -16,21 +15,18 @@ const test_movie = {
 }
 
 
-const MovieList = (props) => {
-    const {listTitle} = useParams()
+const MovieList = () => {
 
     const location = useLocation()
-    console.log(location.state)
+    const list = location.state
 
     return (
         <>
-            <Typography variant="h2" gutterBottom>{listTitle}</Typography>
+            <Typography variant="h2" gutterBottom>{list.name}</Typography>
+            <Typography variant="subtitle1" gutterBottom>{list.description}</Typography>
             <Stack spacing={2} display="flex" alignItems="center">
-                <MovieCard movieData={test_movie}/>
-                <MovieCard movieData={test_movie}/>
-                <MovieCard movieData={test_movie}/>
-                <MovieCard movieData={test_movie}/>
-                <MovieCard movieData={test_movie}/>
+                <MovieCard movieId={list.list[0]}/>
+                <MovieCard movieId={list.list[1]}/>
             </Stack>
         </>
     )

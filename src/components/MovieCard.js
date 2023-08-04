@@ -2,6 +2,8 @@ import Typography from '@mui/material/Typography';
 import { Card, CardMedia, CardContent, CardActions, Button, Stack, Chip } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Carousel from 'react-material-ui-carousel';
+import { movies } from '../databases/movies';
+import {Box} from '@mui/system'
 
 const formatRuntime = (runtimeMins) => {
   const hours = Math.floor(runtimeMins / 60)
@@ -14,40 +16,70 @@ const formatRuntime = (runtimeMins) => {
   }
 }
 
-export default function MovieCard({movieData}) {
+// const getCoverImagesURL = (movieId) => {
+//   return `/img/movies/${movieId}/cover`
+//   "/img/dQS3L3USI7Zhcq41abzMZF8dXCm.jpg"
+// }
+
+function CoverImageMedia({coverImages}) {
+  if (coverImages.length > 1) {
+    return (
+      <Carousel animation="fade">
+        {coverImages.map((el, index) => {
+          return (
+            <CardMedia
+              key={index}
+              component="img"
+              alt="movie cover"
+              image={el}
+            />
+          )
+        })}
+      </Carousel>
+    )
+  } else {
+    return (
+      <Box >
+        <CardMedia
+          component="img"
+          alt="movie cover"
+          image={coverImages[0]}
+        />
+      </Box>
+    )
+  }
+}
+
+
+export default function MovieCard(props) {
+  const movieId = props.movieId
+  const movie = movies[movieId]
+
   return (
     <Card sx={{ maxWidth: 800, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2}>
-        <Grid xs={4} container justifyContent="center" alignItems="center" >
-          <CardMedia
-              sx={{width: '80%'}}
-              component="img"
-              alt="movie cover"
-              image={movieData.coverImage}
-            />
+        <Grid xs={4} >
+          
+          <CoverImageMedia coverImages={movie.coverImages} />
         </Grid>
         <Grid xs={8}>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              {movieData.title}, {movieData.year}
+              {movie.titles.join(' · ')}
             </Typography>
             <Typography gutterBottom variant="subtitle1" component="div">
-              {formatRuntime(movieData.runtime)}
+              {movie.releaseYears}, {formatRuntime(movie.runtime)}
             </Typography>
-            <Stack direction="row" spacing={1}>
-              {movieData.genres.map((el, index) => {
-                return (
-                  <Chip key={index} label={el} size="small" variant="outlined"/>
-                )
-              })}
-            </Stack>
+            <Typography gutterBottom variant="subtitle1" component="div">
+              {movie.genres.join(' · ')}
+            </Typography>
             <Typography variant="body2" >
-              {movieData.description}
+              {movie.description}
             </Typography>
-            <Carousel>
-              {movieData.images.map((el, index) => {
+            <Carousel animation="fade">
+              {movie.otherImages.map((el, index) => {
                 return (
-                    <img key={index} src={el} height="150" alt="movie backdrop"/>
+                    <img key={index} src={el} height="150" alt="movie backdrop" />
                 )
               })}
             </Carousel>
