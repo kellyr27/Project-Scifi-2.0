@@ -6,11 +6,7 @@
 
 export const movies = {
     0: {
-        id: 1,
-        type: 1,
         titles: ['Planet of the Apes'],
-        imdbRating: 8.0,
-        imdbLink: 'https://www.imdb.com/title/tt0063442/',
         runtime: 112,
         releaseYears: '1969',
         genres: ["Science Fiction","Adventure","Drama", "Action"],
@@ -19,11 +15,7 @@ export const movies = {
         coverImages: ["/img/fqf2LjNRkRQaPfXRDxt1yS2i7z.jpg"]
     }, 
     1: {
-        id: 2,
-        type: 2,
         titles: ['Alien', 'Aliens'],
-        imdbRating: [8.0, 8.4],
-        imdbLink: 'https://www.imdb.com/title/tt0078748/',
         runtime: null,
         releaseYears: '1979 - 1986',
         genres: ["Science Fiction","Horror"],
@@ -32,39 +24,472 @@ export const movies = {
         coverImages: ["/img/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg", "/img/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"]
     }, 
     2: {
-        id: 3,
-        type: 1,
         titles: ['2001: A Space Odyssey'],
-        imdbRating: 8.3,
-        imdbLink: 'https://www.imdb.com/title/tt0062622/',
         runtime: 149,
         releaseYears: '1968',
         genres: ["Science Fiction","Mystery", "Adventure"],
         description: `"2001: A Space Odyssey" is a landmark science fiction film directed by Stanley Kubrick. Spanning from prehistoric Earth to space exploration, it follows a mysterious monolith's influence on human evolution and the discovery of an enigmatic signal near Jupiter. A visual and philosophical masterpiece exploring the mysteries of existence and evolution.`,
-        otherImages: ["/img/3NZ5y4oLwvm1KF99m0DPQoqpEAP.jpg", "/img/cEobq5QrnOJjO6giDs8q4RxmMKh.jpg", "/img/ryjmULUTAHrGtCily5GMhWSvuI0.jpg", "/img/sJfDC6aPHO8xAHJ8FDvte9TQxbG.jpg", "/img/zO10n5QUiiU2g5cAIDofGVcBeBM.jpg"],
-        coverImages: ["/img/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg", "/img/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"]
+        otherImages: [],
+        coverImages: []
     }, 
     3: {
-        id: 4,
-        type: 2,
         titles: ['A New Hope', 'The Empire Strikes Back', 'Return of the Jedi'],
-        imdbRating: [8.6, 8.7, 8.3],
-        imdbLink: 'https://www.imdb.com/title/tt0076759/',
         runtime: null,
         releaseYears: '1977 - 1983',
         genres: ["Science Fiction","Adventure", "Action"],
         description: `The original Star Wars trilogy, consisting of "A New Hope," "The Empire Strikes Back," and "Return of the Jedi," is an epic space opera saga. It follows the heroic journey of Luke Skywalker and his allies as they battle the tyrannical Galactic Empire, experiencing epic lightsaber duels, iconic characters, and a timeless battle between good and evil.`,
+        otherImages: [],
+        coverImages: []
+    }, 
+    4: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    5: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    6: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    7: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    8: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    9: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    10: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    11: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    12: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    13: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    14: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    15: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    16: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    17: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    18: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    19: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    20: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    21: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    22: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    23: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    24: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    25: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    26: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    27: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    28: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    29: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    30: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    31: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    32: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    33: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    34: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    35: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    36: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    37: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    38: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    39: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    40: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    41: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    42: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    43: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    44: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    45: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    46: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    47: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    48: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    49: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    50: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    51: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
+    },
+    52: {
+        titles: null,
+        runtime: null,
+        releaseYears: null,
+        genres: null,
+        description: null,
+        otherImages: null,
+        coverImages: null
     }
 }
 
 // {
-//     id: null,
-//     type: null,
-//     title: null,
-//     imdbRating: null,
-//     imdbLink: null,
+//     titles: null,
 //     runtime: null,
 //     releaseYears: null,
 //     genres: null,
 //     description: null,
+//     otherImages: null,
+//     coverImages: null
 // }

@@ -11,7 +11,6 @@ import { CoverImageMedia } from '../functions/database';
 export default function BookCard(props) {
   const bookId = props.bookId
   const book = books[bookId]
-  console.log('Book is', book)
 
   return (
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>

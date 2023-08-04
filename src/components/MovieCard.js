@@ -49,7 +49,6 @@ const formatRuntime = (runtimeMins) => {
 export default function MovieCard(props) {
   const movieId = props.movieId
   const movie = movies[movieId]
-  console.log(props)
 
   return (
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>

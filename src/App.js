@@ -1,21 +1,31 @@
 
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ButtonAppBar from './components/Navbar';
 import ListDisplay from './components/ListDisplay';
 import { Container } from '@mui/material';
+import { lists } from './databases/lists';
+import { textToURL } from './functions/database';
+
+// const matchListURLToId = (lists, url) => {
+//   return 0
+// }
 
 function App() {
+
+  const firstList = lists[0]
+
   return (
     <>
       <ButtonAppBar />
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        {/* <Route path="/" element={<Home/>}/> */}
         <Route path="/books/:listTitle" element={<ListDisplay/>}/>
         <Route path="/movies/:listTitle" element={<ListDisplay/>} />
         <Route path="/tv/:listTitle" element={<ListDisplay/>} />
-        <Route path="*" element={<ListDisplay/>} />
+        {/* <Route path="*" element={<Home/>} /> */}
+        <Route path="*" element={<Navigate to={`/${firstList.type}/${textToURL(firstList.name)}`} />} />
       </Routes>
     </>
   );

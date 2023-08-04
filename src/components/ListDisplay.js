@@ -1,10 +1,12 @@
 import MovieCard from "./MovieCard"
 import Stack from '@mui/material/Stack'
 import { Typography } from "@mui/material"
-import { useLocation } from "react-router-dom"
+import { useLocation, useParams } from "react-router-dom"
 import { Box } from '@mui/material';
 import TvCard from "./TvCard";
 import BookCard from "./BookCard";
+import { textToURL } from "../functions/database";
+import { lists as listsDatabase } from "../databases/lists";
 
 const ListCards = ({listType, list}) => {
     if (listType === 'movies') {
@@ -40,11 +42,17 @@ const ListCards = ({listType, list}) => {
     }
 }
 
-const ListDisplay = () => {
+const matchListURLToId = (lists, url) => {
+  for (const list of lists) {
+    if (textToURL(list.name) === url) {
+        return list
+    }
+  }
+}
 
-    const location = useLocation()
-    const list = location.state
-    
+const ListDisplay = () => {
+    const {listTitle} = useParams()
+    const list = matchListURLToId(listsDatabase, listTitle)
 
     return (
         <Box >
