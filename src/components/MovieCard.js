@@ -57,12 +57,12 @@ export default function MovieCard(props) {
   return (
     <Card sx={{ maxWidth: 800, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2}>
-        <Grid xs={4}>
+        <Grid xs={4} sx={{display: {xs: 'none', sm: 'block'}}}>
           <div className="ProductDetails">
             <CoverImageMedia coverImages={movie.coverImages} />
           </div>
         </Grid>
-        <Grid xs={8}>
+        <Grid xs>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {movie.titles.join(' · ')}
@@ -76,13 +76,18 @@ export default function MovieCard(props) {
             <Typography variant="body2" >
               {movie.description}
             </Typography>
-            {/* <Carousel animation="fade">
+            <Carousel animation="fade">
               {movie.otherImages.map((el, index) => {
                 return (
-                    <img key={index} src={el} height="150" alt="movie backdrop" />
+                  <CardMedia
+                    key={index}
+                    component="img"
+                    alt="movie scenes"
+                    image={el}
+                  />
                 )
               })}
-            </Carousel> */}
+            </Carousel>
           </CardContent>
         </Grid>
       </Grid>
