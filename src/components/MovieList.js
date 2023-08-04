@@ -27,6 +27,7 @@ const MovieList = () => {
             <Stack spacing={2} display="flex" alignItems="center">
                 <MovieCard movieId={list.list[0]}/>
                 <MovieCard movieId={list.list[1]}/>
+                <MovieCard movieId={list.list[0]}/>
             </Stack>
         </>
     )

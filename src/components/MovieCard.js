@@ -4,6 +4,7 @@ import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Carousel from 'react-material-ui-carousel';
 import { movies } from '../databases/movies';
 import {Box} from '@mui/system'
+import '../App.css';
 
 const formatRuntime = (runtimeMins) => {
   const hours = Math.floor(runtimeMins / 60)
@@ -24,28 +25,29 @@ const formatRuntime = (runtimeMins) => {
 function CoverImageMedia({coverImages}) {
   if (coverImages.length > 1) {
     return (
-      <Carousel animation="fade">
-        {coverImages.map((el, index) => {
-          return (
-            <CardMedia
-              key={index}
-              component="img"
-              alt="movie cover"
-              image={el}
-            />
-          )
-        })}
-      </Carousel>
+      <div className="ProductDetails">
+        <Carousel animation="fade">
+          {coverImages.map((el, index) => {
+            return (
+              <CardMedia
+                key={index}
+                component="img"
+                alt="movie cover"
+                image={el}
+              />
+            )
+          })}
+        </Carousel>
+      </div>
     )
   } else {
     return (
-      <Box >
-        <CardMedia
-          component="img"
-          alt="movie cover"
-          image={coverImages[0]}
-        />
-      </Box>
+      <CardMedia
+
+        component="img"
+        alt="movie cover"
+        image={coverImages[0]}
+      />
     )
   }
 }
@@ -58,8 +60,7 @@ export default function MovieCard(props) {
   return (
     <Card sx={{ maxWidth: 800, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2}>
-        <Grid xs={4} >
-          
+        <Grid xs={4}>
           <CoverImageMedia coverImages={movie.coverImages} />
         </Grid>
         <Grid xs={8}>
@@ -76,13 +77,13 @@ export default function MovieCard(props) {
             <Typography variant="body2" >
               {movie.description}
             </Typography>
-            <Carousel animation="fade">
+            {/* <Carousel animation="fade">
               {movie.otherImages.map((el, index) => {
                 return (
                     <img key={index} src={el} height="150" alt="movie backdrop" />
                 )
               })}
-            </Carousel>
+            </Carousel> */}
           </CardContent>
         </Grid>
       </Grid>
