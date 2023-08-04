@@ -5,13 +5,13 @@ export const lists = [
         name: 'Best Classic Scifi Movies',
         description: 'The best science fiction movies released before 1990.',
         type: 'movies',
-        list: [0,1,2,3]
+        list: [0,1, 2]
     },
     {
         name: 'Best Scifi TV Shows of All Time',
         description: 'The best science fiction tv series of all time.',
         type: 'tv',
-        list: [1, 2, 3, 4]
+        list: [0, 1, 2, 3]
     }, {
         name: 'Best Scifi Graphic Novels and Comics',
         description: 'The best science fiction graphic novels and comic book series.',

@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ButtonAppBar from './components/Navbar';
-import MovieList from './components/MovieList';
+import ListDisplay from './components/ListDisplay';
 import { Container } from '@mui/material';
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
       <ButtonAppBar />
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/books/:listTitle" element={<MovieList/>}/>
-        <Route path="/movies/:listTitle" element={<MovieList/>} />
-        <Route path="/tv/:listTitle" element={<MovieList/>} />
-        <Route path="*" element={<MovieList/>} />
+        <Route path="/books/:listTitle" element={<ListDisplay/>}/>
+        <Route path="/movies/:listTitle" element={<ListDisplay/>} />
+        <Route path="/tv/:listTitle" element={<ListDisplay/>} />
+        <Route path="*" element={<ListDisplay/>} />
       </Routes>
     </>
   );

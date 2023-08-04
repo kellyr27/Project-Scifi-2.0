@@ -34,13 +34,15 @@ export const movies = {
     2: {
         id: 3,
         type: 1,
-        titles: '2001: A Space Odyssey',
+        titles: ['2001: A Space Odyssey'],
         imdbRating: 8.3,
         imdbLink: 'https://www.imdb.com/title/tt0062622/',
         runtime: 149,
         releaseYears: '1968',
         genres: ["Science Fiction","Mystery", "Adventure"],
         description: `"2001: A Space Odyssey" is a landmark science fiction film directed by Stanley Kubrick. Spanning from prehistoric Earth to space exploration, it follows a mysterious monolith's influence on human evolution and the discovery of an enigmatic signal near Jupiter. A visual and philosophical masterpiece exploring the mysteries of existence and evolution.`,
+        otherImages: ["/img/3NZ5y4oLwvm1KF99m0DPQoqpEAP.jpg", "/img/cEobq5QrnOJjO6giDs8q4RxmMKh.jpg", "/img/ryjmULUTAHrGtCily5GMhWSvuI0.jpg", "/img/sJfDC6aPHO8xAHJ8FDvte9TQxbG.jpg", "/img/zO10n5QUiiU2g5cAIDofGVcBeBM.jpg"],
+        coverImages: ["/img/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg", "/img/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"]
     }, 
     3: {
         id: 4,

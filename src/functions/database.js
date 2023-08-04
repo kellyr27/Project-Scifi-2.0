@@ -20,3 +20,5 @@ export const splitListsByType = (lists) => {
 export const textToURL = (text) => {
     return text.replaceAll(' ', '-').toLowerCase()
 }
+
+
