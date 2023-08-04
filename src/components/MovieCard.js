@@ -25,25 +25,22 @@ const formatRuntime = (runtimeMins) => {
 function CoverImageMedia({coverImages}) {
   if (coverImages.length > 1) {
     return (
-      <div className="ProductDetails">
-        <Carousel animation="fade">
-          {coverImages.map((el, index) => {
-            return (
-              <CardMedia
-                key={index}
-                component="img"
-                alt="movie cover"
-                image={el}
-              />
-            )
-          })}
-        </Carousel>
-      </div>
+      <Carousel animation="fade">
+        {coverImages.map((el, index) => {
+          return (
+            <CardMedia
+              key={index}
+              component="img"
+              alt="movie cover"
+              image={el}
+            />
+          )
+        })}
+      </Carousel>
     )
   } else {
     return (
       <CardMedia
-
         component="img"
         alt="movie cover"
         image={coverImages[0]}
@@ -61,7 +58,9 @@ export default function MovieCard(props) {
     <Card sx={{ maxWidth: 800, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2}>
         <Grid xs={4}>
-          <CoverImageMedia coverImages={movie.coverImages} />
+          <div className="ProductDetails">
+            <CoverImageMedia coverImages={movie.coverImages} />
+          </div>
         </Grid>
         <Grid xs={8}>
           <CardContent>
@@ -69,7 +68,7 @@ export default function MovieCard(props) {
               {movie.titles.join(' · ')}
             </Typography>
             <Typography gutterBottom variant="subtitle1" component="div">
-              {movie.releaseYears}, {formatRuntime(movie.runtime)}
+              {movie.runtime ? `${movie.releaseYears}, ${formatRuntime(movie.runtime)}` : `${movie.releaseYears}`}
             </Typography>
             <Typography gutterBottom variant="subtitle1" component="div">
               {movie.genres.join(' · ')}
