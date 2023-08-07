@@ -46,7 +46,7 @@ export const movies = {
         runtime: 97,
         releaseYears: '1973',
         genres: ["Science Fiction", "Thriller"],
-        description: null,
+        description: `"Soylent Green" is a dystopian thriller set in an overpopulated, ecologically devastated future. Detective Thorn investigates a murder that leads him to uncover a horrifying truth about the government's food source, Soylent Green. With societal decay and ethical questions, the film delves into environmental concerns and the consequences of unchecked corporate power.`,
         otherImages: null,
         coverImages: null
     },
@@ -55,7 +55,8 @@ export const movies = {
         runtime: null,
         releaseYears: '1984 - 1991',
         genres: ["Action","Thriller","Science Fiction"],
-        description: null,
+        description: `
+        The Terminator franchise is a sci-fi saga of relentless machines and time travel. It follows Sarah Connor and her son John, future saviors of humanity, pursued by killer cyborgs from a post-apocalyptic future. With thrilling action and themes of fate, technology, and humanity's survival, it's a gripping battle across time.`,
         otherImages: null,
         coverImages: null
     },
@@ -64,7 +65,7 @@ export const movies = {
         runtime: 136,
         releaseYears: '1971',
         genres: ["Science Fiction","Drama"],
-        description: null,
+        description: `"A Clockwork Orange" is a provocative dystopian film directed by Stanley Kubrick. It follows Alex, a delinquent who undergoes an experimental rehabilitation to suppress his violent tendencies. Examining free will, ethics, and the dark underbelly of society, the film presents a disturbing exploration of behavior control and the human psyche.`,
         otherImages: null,
         coverImages: null
     },
@@ -73,7 +74,7 @@ export const movies = {
         runtime: 109,
         releaseYears: '1982',
         genres: ["Horror", "Mystery", "Science Fiction"],
-        description: null,
+        description: `"The Thing" is a gripping sci-fi horror directed by John Carpenter. In an Antarctic research station, a shape-shifting alien terrorizes a group of isolated scientists. Suspicion and paranoia mount as they struggle to identify the imposter, blurring the lines between friend and foe. A chilling tale of fear, survival, and distrust.`,
         otherImages: null,
         coverImages: null
     },
@@ -91,7 +92,7 @@ export const movies = {
         runtime: 117,
         releaseYears: '1982',
         genres: ["Science Fiction","Drama", "Thriller"],
-        description: null,
+        description: `"Jurassic Park" is a thrilling adventure directed by Steven Spielberg. A billionaire's vision of a dinosaur theme park turns deadly when prehistoric creatures escape and wreak havoc. As chaos erupts, a group fights to survive the rampaging beasts, showcasing the awe and danger of resurrected life in this iconic dinosaur spectacle.`,
         otherImages: null,
         coverImages: null
     },
@@ -100,7 +101,7 @@ export const movies = {
         runtime: 103,
         releaseYears: '1960',
         genres: ["Science Fiction","Adventure","Action"],
-        description: null,
+        description: `"The Time Machine" (1960) is a classic sci-fi film based on H.G. Wells' novel. Scientist George travels to the distant future, encountering evolving societies and witnessing Earth's transformation. He races against time, confronting progress and decay, to rescue a civilization and fulfill his own destiny. A timeless journey through ages.`,
         otherImages: null,
         coverImages: null
     },
@@ -109,7 +110,7 @@ export const movies = {
         runtime: 113,
         releaseYears: '2001',
         genres: ["Science Fiction","Fantasy","Drama","Mystery"],
-        description: null,
+        description: `"Donnie Darko" is a mind-bending psychological drama. Troubled teenager Donnie is plagued by visions of a menacing rabbit that predicts the world's end. As he navigates a mysterious alternate reality, the film delves into time travel, fate, and the blurred lines between sanity and madness, leaving audiences questioning reality.`,
         otherImages: null,
         coverImages: null
     },
@@ -118,7 +119,7 @@ export const movies = {
         runtime: 87,
         releaseYears: '2007',
         genres: ["Science Fiction","Drama"],
-        description: null,
+        description: `"The Man from Earth" is an intriguing sci-fi drama. A college professor reveals to colleagues that he's a prehistoric immortal, sparking intense debates on history, religion, and the nature of humanity. Set almost entirely in a single room, the film captivates with its thought-provoking dialogue and philosophical exploration of immortality.`,
         otherImages: null,
         coverImages: null
     },
@@ -127,7 +128,7 @@ export const movies = {
         runtime: 97,
         releaseYears: '2009',
         genres: ["Science Fiction","Drama"],
-        description: null,
+        description: `"Moon" is a mesmerizing sci-fi film. Astronaut Sam Bell, stationed alone on a lunar base, uncovers unsettling truths about his identity and purpose. Amid isolation and discovery, the film delves into ethics, identity, and the consequences of corporate greed, creating a hauntingly atmospheric exploration of humanity and technology.`,
         otherImages: null,
         coverImages: null
     },
@@ -136,7 +137,7 @@ export const movies = {
         runtime: 113,
         releaseYears: '2002',
         genres: ["Horror","Thriller","Science Fiction"],
-        description: null,
+        description: `"28 Days Later" is a gripping horror-thriller. A man awakens from a coma to find a post-apocalyptic London overrun by raging zombies. As he joins survivors in a desperate bid for safety, the film explores humanity's resilience, morality, and the harrowing consequences of a virus-induced collapse, delivering intense suspense and survivalism.`,
         otherImages: null,
         coverImages: null
     },
@@ -145,7 +146,7 @@ export const movies = {
         runtime: 97,
         releaseYears: '2014',
         genres: ["Science Fiction","Thriller"],
-        description: null,
+        description: `"Predestination" is a mind-bending time travel thriller. A temporal agent embarks on a complex mission to prevent a terrorist's devastating attack. Twists and paradoxes unfold as identities intertwine, blurring lines between past, present, and future. The film offers a riveting exploration of causality, identity, and the intricacies of time travel.`,
         otherImages: null,
         coverImages: null
     },
@@ -153,8 +154,8 @@ export const movies = {
         titles: ['Cube'],
         runtime: 90,
         releaseYears: '1997',
-        genres: null,
-        description: null,
+        genres: ["Thriller","Science Fiction", "Mystery"],
+        description: `"Cube" is a suspenseful sci-fi horror. Strangers wake in a bewildering maze of deadly traps, struggling to escape while unraveling the enigma of their confinement. As tensions rise, the film probes human nature under extreme stress, delivering a tense, claustrophobic experience that questions trust, motives, and the price of survival.`,
         otherImages: null,
         coverImages: null
     },
@@ -162,8 +163,8 @@ export const movies = {
         titles: ['Coherence'],
         runtime: 89,
         releaseYears: '2013',
-        genres: ["Thriller","Science Fiction", "Mystery"],
-        description: null,
+        genres: ["Thriller","Science Fiction"],
+        description: `"Coherence" is a mind-bending thriller. During a dinner party, a passing comet triggers a series of eerie events, fracturing reality and relationships. As tensions mount, the group navigates parallel universes and their doppelgängers, blurring lines between identity and alternate realities. A gripping exploration of uncertainty, paranoia, and cosmic anomalies.`,
         otherImages: null,
         coverImages: null
     },
@@ -172,7 +173,8 @@ export const movies = {
         runtime: 100,
         releaseYears: '2006',
         genres: ["Animation","Science Fiction", "Thriller"],
-        description: null,
+        description: `
+        "A Scanner Darkly" is a dystopian sci-fi film. Undercover cop Bob Arctor navigates a drug-ridden world, battling addiction and surveilling himself. As identities blur and paranoia intensifies, the film explores government control, addiction's grip, and the fragility of perception, delivering a visually distinct and thought-provoking examination of reality and deception.`,
         otherImages: null,
         coverImages: null
     },
