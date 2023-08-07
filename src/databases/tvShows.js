@@ -1,13 +1,8 @@
 
 export const tvShows = {
     0: {
-        id: 1,
         title: 'Futurama',
-        imdbRating: 8.5,
-        imdbLink: 'https://www.imdb.com/title/tt0149460/',
         numOfSeasons: 8,
-        numOfEpisodes: 160,
-        runtime: '22',
         releaseYears: '1999 - 2023',
         genres: ["Animation", "Comedy", "Science Fiction"],
         description: `Futurama is an animated sci-fi sitcom set in the 31st century. Follow the misadventures of Fry, a pizza delivery boy who wakes up after a thousand-year cryogenic sleep, joining a crew of eccentric aliens and robots as they explore the bizarre, humorous, and satirical aspects of the future.`,
@@ -15,13 +10,8 @@ export const tvShows = {
         coverImages: ["/img/7RRHbCUtAsVmKI6FEMzZB6Re88P.jpg"]
     }, 
     1: {
-        id: 2,
         title: 'Black Mirror',
-        imdbRating: 8.7,
-        imdbLink: 'https://www.imdb.com/title/tt2085059/',
         numOfSeasons: 6,
-        numOfEpisodes: 27,
-        runtime: '40 - 89',
         releaseYears: '2011 - 2023',
         genres: ["Science Fiction", "Mystery", "Drama", "Thriller", "TV Movie"],
         description: `Black Mirror is a gripping anthology series that delves into the dark and dystopian side of modern society and technology. Each standalone episode presents thought-provoking and unsettling stories, exploring the potential consequences of our obsession with innovation and the eerie implications of a technologically advanced future.`,
@@ -29,13 +19,8 @@ export const tvShows = {
         coverImages: ["/img/5UaYsGZOFhjFDwQh6GuLjjA1WlF.jpg"]
     }, 
     2: {
-        id: 3,
         title: 'Stranger Things',
-        imdbRating: 8.7,
-        imdbLink: 'https://www.imdb.com/title/tt4574334/',
         numOfSeasons: 4,
-        numOfEpisodes: 34,
-        runtime: '42 - 139',
         releaseYears: '2016 - 2024',
         genres: ["Science Fiction", "Mystery", "Drama", "Fantasy"],
         description: `Stranger Things is a thrilling sci-fi horror series set in the 1980s. When a young boy vanishes in a small town, his friends encounter a mysterious girl with supernatural powers. As they search for him, they unravel government secrets and face terrifying creatures from an alternate dimension, forging unbreakable bonds.`,
@@ -43,30 +28,120 @@ export const tvShows = {
         coverImages: ["/img/pi8WsJtGKxuJHdp0m1W2wq7IvxW.jpg"]
     }, 
     3: {
-        id: 4,
         title: 'The X-Files',
-        imdbRating: 8.6,
-        imdbLink: 'https://www.imdb.com/title/tt0106179/',
         numOfSeasons: 11,
-        numOfEpisodes: 217,
-        runtime: '43',
         releaseYears: '1993 - 2018',
         genres: ["Drama", "Mystery", "Science Fiction", "Thriller"],
         description: `The X-Files is a captivating sci-fi drama following FBI agents Mulder and Scully as they investigate paranormal and unsolved cases. Combining elements of conspiracy, extraterrestrial encounters, and the unexplained, the duo's relentless pursuit of truth leads them to confront government cover-ups and unworldly phenomena, challenging their beliefs and sanity.`,
         otherImages: ["/img/f0Ml8e96qkabNFcsqfgDKTWSraG.jpg", "/img/MV5BNTlhMzQyYTMtNzI3Yi00MTRkLTg1NmYtNWIxNGEyNTU1MDE1XkEyXkFqcGdeQXVyMjU3NzUyMTU@._V1_FMjpg_UX1260_.jpg", "/img/MV5BZDc0OTNhN2EtNjAxOC00NzQyLTg1NGItNTU5OTcxNDM3ZjIzXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_FMjpg_UX1920_.jpg"],
         coverImages: ["/img/5BD0kiTGnDxONqdrsswTewnk6WH.jpg"]
-    } 
+    },
+    4: {
+        title: 'The Expanse',
+        numOfSeasons: 6,
+        releaseYears: '2015 - 2022',
+        genres: [],
+        description: `"The Expanse" is a captivating space opera. Set in a future where Earth, Mars, and the Belt vie for power, a disparate group uncovers a conspiracy that threatens humanity. The series delves into political intrigue, interstellar conflict, and human survival, delivering a richly layered narrative of technology, exploration, and power struggles.`,
+        otherImages: [],
+        coverImages: []
+    },
+    5: {
+        title: 'Fringe',
+        numOfSeasons: 5,
+        releaseYears: '2008 - 2013',
+        genres: [],
+        description: `"Fringe" is a riveting sci-fi thriller. FBI agent Olivia Dunham investigates mysterious phenomena alongside a brilliant but eccentric scientist, Walter Bishop, and his son Peter. The series explores parallel universes, scientific anomalies, and government conspiracies, blending suspense and character-driven storytelling in an intricate narrative of intrigue and discovery.`,
+        otherImages: [],
+        coverImages: []
+    },
+    6: {
+        title: 'Futurama',
+        numOfSeasons: 8,
+        releaseYears: '1999 - ',
+        genres: [],
+        description: `"Futurama" is a hilarious animated series. Fry, a slacker from the 21st century, awakens in the 31st century and joins a ragtag crew including a robot, one-eyed alien, and mad scientist. The show humorously explores futuristic absurdities, science fiction tropes, and societal satire, creating a wacky and endearing sci-fi comedy.`,
+        otherImages: [],
+        coverImages: []
+    },
+    7: {
+        title: 'Lost',
+        numOfSeasons: 6,
+        releaseYears: '2004 - 2010',
+        genres: [],
+        description: `"Lost" is a captivating mystery drama. After a plane crash, survivors find themselves stranded on a mysterious island, facing supernatural phenomena and personal struggles. The series interweaves character backstories with enigmatic island secrets, exploring fate, redemption, and the complexities of human connections, in an intricately layered narrative of survival and discovery.`,
+        otherImages: [],
+        coverImages: []
+    },
+    8: {
+        title: 'Love, Death & Robots',
+        numOfSeasons: 3,
+        releaseYears: '2019 - ',
+        genres: [],
+        description: `"Love, Death & Robots" is an anthology animated series. Each episode showcases unique and often darkly imaginative stories spanning various genres – from sci-fi and fantasy to horror and comedy. The series offers bite-sized narratives exploring the human condition, technology, and society, creating a visually stunning and thought-provoking mosaic of animation.`,
+        otherImages: [],
+        coverImages: []
+    },
+    9: {
+        title: 'Electric Dreams',
+        numOfSeasons: 1,
+        releaseYears: '2017 - 2018',
+        genres: [],
+        description: `"Electric Dreams" is a sci-fi anthology series. Adapted from Philip K. Dick's stories, each episode delves into speculative worlds and futuristic concepts. The series navigates themes of identity, reality, and the impact of technology, offering a thought-provoking exploration of the human experience through a diverse range of captivating narratives.`,
+        otherImages: [],
+        coverImages: []
+    },
+    10: {
+        title: 'The Mandalorian',
+        numOfSeasons: 3,
+        releaseYears: '2019 - ',
+        genres: [],
+        description: `"The Mandalorian" is a thrilling Star Wars series. Set after the Empire's fall, a lone bounty hunter navigates the outer reaches of the galaxy, protecting a mysterious child known as Grogu. The show blends action, adventure, and character development, delivering a space western with iconic elements and new stories.`,
+        otherImages: [],
+        coverImages: []
+    },
+    11: {
+        title: 'The Last of Us',
+        numOfSeasons: 1,
+        releaseYears: '2023 - ',
+        genres: [],
+        description: `"The Last of Us" is an upcoming post-apocalyptic series. Adapted from the video game, it follows Joel and Ellie's journey across a world devastated by a fungal infection. The show explores survival, humanity, and their evolving bond, offering a gripping narrative of hope and despair in a harrowing landscape.`,
+        otherImages: [],
+        coverImages: []
+    },
+    12: {
+        title: '',
+        numOfSeasons: null,
+        releaseYears: '',
+        genres: [],
+        description: ``,
+        otherImages: [],
+        coverImages: []
+    },
+    13: {
+        title: '',
+        numOfSeasons: null,
+        releaseYears: '',
+        genres: [],
+        description: ``,
+        otherImages: [],
+        coverImages: []
+    },
+    14: {
+        title: '',
+        numOfSeasons: null,
+        releaseYears: '',
+        genres: [],
+        description: ``,
+        otherImages: [],
+        coverImages: []
+    },
+    15: {
+        title: '',
+        numOfSeasons: null,
+        releaseYears: '',
+        genres: [],
+        description: ``,
+        otherImages: [],
+        coverImages: []
+    },
 }
-
-// {
-//     id: null,
-//     title: null,
-//     imdbRating: null,
-//     imdbLink: null,
-//     numOfSeasons: null,
-//     numOfEpisodes: null,
-//     runtime: null,
-//     releaseYears: null,
-//     genres: null,
-//     description: null,
-// }, 
