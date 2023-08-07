@@ -9,6 +9,10 @@ import { textToURL } from "../functions/database";
 import { lists as listsDatabase } from "../databases/lists";
 
 const ListCards = ({listType, list}) => {
+
+    // Randomize List Order
+    list = list.sort((a, b) => 0.5 - Math.random());
+
     if (listType === 'movies') {
         return (
             <>
