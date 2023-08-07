@@ -11,8 +11,8 @@ export const movies = {
         releaseYears: '1969',
         genres: ["Science Fiction","Adventure","Drama", "Action"],
         description: `In the 1969 sci-fi classic "Planet of the Apes", astronaut Colonel Taylor crashes on a planet dominated by intelligent apes who enslave primitive humans. As he challenges their society, shocking truths about the planet and humanity's fate are revealed, leading to a gripping and thought-provoking climax with an iconic twist.`,
-        otherImages: ["/img/dQS3L3USI7Zhcq41abzMZF8dXCm.jpg", "/img/pNlDNGmEPx9zt00zoPhP2VUuITv.jpg", "/img/zRo7v3syLG19ZaLxZRFRLN1L9iX.jpg"],
-        coverImages: ["/img/fqf2LjNRkRQaPfXRDxt1yS2i7z.jpg"]
+        otherImages: ["/img/movies/dQS3L3USI7Zhcq41abzMZF8dXCm.jpg", "/img/movies/pNlDNGmEPx9zt00zoPhP2VUuITv.jpg", "/img/movies/zRo7v3syLG19ZaLxZRFRLN1L9iX.jpg"],
+        coverImages: ["/img/movies/fqf2LjNRkRQaPfXRDxt1yS2i7z.jpg"]
     }, 
     1: {
         titles: ['Alien', 'Aliens'],
@@ -20,8 +20,8 @@ export const movies = {
         releaseYears: '1979 - 1986',
         genres: ["Science Fiction","Horror"],
         description: `The Alien movie franchise is a gripping sci-fi horror saga. It begins with Ridley Scott's "Alien," where a commercial spaceship encounters a deadly extraterrestrial creature. Sigourney Weaver's iconic Ellen Ripley leads the battle against relentless Xenomorphs across sequels, offering intense suspense, thrilling action, and exploring humanity's struggle against a terrifying, hostile force.`,
-        otherImages: ["/img/3NZ5y4oLwvm1KF99m0DPQoqpEAP.jpg", "/img/cEobq5QrnOJjO6giDs8q4RxmMKh.jpg", "/img/ryjmULUTAHrGtCily5GMhWSvuI0.jpg", "/img/sJfDC6aPHO8xAHJ8FDvte9TQxbG.jpg", "/img/zO10n5QUiiU2g5cAIDofGVcBeBM.jpg"],
-        coverImages: ["/img/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg", "/img/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"]
+        otherImages: ["/img/movies/3NZ5y4oLwvm1KF99m0DPQoqpEAP.jpg", "/img/movies/cEobq5QrnOJjO6giDs8q4RxmMKh.jpg", "/img/movies/ryjmULUTAHrGtCily5GMhWSvuI0.jpg", "/img/movies/sJfDC6aPHO8xAHJ8FDvte9TQxbG.jpg", "/img/movies/zO10n5QUiiU2g5cAIDofGVcBeBM.jpg"],
+        coverImages: ["/img/movies/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg", "/img/movies/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"]
     }, 
     2: {
         titles: ['2001: A Space Odyssey'],
@@ -55,8 +55,7 @@ export const movies = {
         runtime: null,
         releaseYears: '1984 - 1991',
         genres: ["Action","Thriller","Science Fiction"],
-        description: `
-        The Terminator franchise is a sci-fi saga of relentless machines and time travel. It follows Sarah Connor and her son John, future saviors of humanity, pursued by killer cyborgs from a post-apocalyptic future. With thrilling action and themes of fate, technology, and humanity's survival, it's a gripping battle across time.`,
+        description: `The Terminator franchise is a sci-fi saga of relentless machines and time travel. It follows Sarah Connor and her son John, future saviors of humanity, pursued by killer cyborgs from a post-apocalyptic future. With thrilling action and themes of fate, technology, and humanity's survival, it's a gripping battle across time.`,
         otherImages: null,
         coverImages: null
     },
