@@ -7,6 +7,14 @@ import {Box} from '@mui/system'
 import '../App.css';
 import { CoverImageMedia } from '../functions/database';
 
+function seasonPlurality(numOfSeasons) {
+  if (numOfSeasons === 1) {
+    return 'season'
+  }
+  else {
+    return 'seasons'
+  }
+}
 
 export default function TvCard(props) {
   const tvShowId = props.tvId
@@ -24,7 +32,7 @@ export default function TvCard(props) {
               {tvShow.title}
             </Typography>
             <Typography variant="subtitle1" component="div" align="center" sx={{mb: 0}}>
-              {`${tvShow.numOfSeasons} seasons · ${tvShow.releaseYears}`}
+              {`${tvShow.numOfSeasons} ${seasonPlurality(tvShow.numOfSeasons)} · ${tvShow.releaseYears}`}
             </Typography>
             <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2}}>
               {tvShow.genres.join(' · ')}

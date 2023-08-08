@@ -32,7 +32,7 @@ const CoverImageMediaWrapper = ({coverImages}) => {
                 {coverImages.map((el, index) => {
                     return (
                         <CardMedia
-                            sx={{p: 2}}
+                            sx={{p: 3}}
                             key={index}
                             component="img"
                             alt="movie cover"
@@ -45,7 +45,7 @@ const CoverImageMediaWrapper = ({coverImages}) => {
     } else {
         return (
             <CardMedia
-                sx={{p: 2}}
+                sx={{p: 3}}
                 component="img"
                 alt="movie cover"
                 image={coverImages[0]}
