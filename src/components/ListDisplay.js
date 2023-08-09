@@ -64,7 +64,7 @@ const ListDisplay = () => {
     }, [list])
 
     return (
-        <Box >
+        <Box>
             <Typography variant="h2" align="center" sx={{mt: 8, mb: 3}}>{list.name}</Typography>
             <Typography variant="subtitle1" align="center" sx={{mb: 7}}>{list.description}</Typography>
             <Stack spacing={2} display="flex" alignItems="center" sx={{pb: 30}}>

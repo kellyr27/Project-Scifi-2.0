@@ -1,5 +1,6 @@
 import { CardMedia, Grid } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
+import '../App.css';
 
 export const splitListsByType = (lists) => {
     /**
@@ -29,15 +30,15 @@ const CoverImageMediaWrapper = ({coverImages, ratio}) => {
     if (coverImages.length > 1) {
         return (
             <Grid xs={ratio} container sx={{display: {xs: 'none', sm: 'flex'}, justifyContent:'center',alignItems:'center'}}>
-                <Carousel animation="fade" sx={{height:'80%', width:'80%', p: 3}}>
+                <Carousel animation="fade" sx={{display: 'block', minWidth: '80%', p: 5}}>
                     {coverImages.map((el, index) => {
                         return (
                             <CardMedia
-                                // sx={{p: 3, maxWidth: '80%'}}
                                 key={index}
                                 component="img"
                                 alt="movie cover"
                                 image={el}
+                                sx={{width: '100%'}}
                             />
                         )
                     })}
@@ -48,7 +49,7 @@ const CoverImageMediaWrapper = ({coverImages, ratio}) => {
         return (
             <Grid xs={ratio} container sx={{display: {xs: 'none', sm: 'flex'}, justifyContent:'center',alignItems:'center'}}>
                 <CardMedia
-                    sx={{maxWidth: '80%', p: 3}}
+                    sx={{maxWidth: '80%', p: 5}}
                     component="img"
                     alt="movie cover"
                     image={coverImages[0]}
