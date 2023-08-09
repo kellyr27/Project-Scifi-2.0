@@ -1,4 +1,4 @@
-import { CardMedia } from '@mui/material';
+import { CardMedia, Grid } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 
 export const splitListsByType = (lists) => {
@@ -25,39 +25,41 @@ export const textToURL = (text) => {
 }
 
 // TODO - Change ALT to an prop
-const CoverImageMediaWrapper = ({coverImages}) => {
+const CoverImageMediaWrapper = ({coverImages, ratio}) => {
     if (coverImages.length > 1) {
         return (
-            <Carousel animation="fade">
-                {coverImages.map((el, index) => {
-                    return (
-                        <CardMedia
-                            sx={{p: 3}}
-                            key={index}
-                            component="img"
-                            alt="movie cover"
-                            image={el}
-                        />
-                    )
-                })}
-            </Carousel>
+            <Grid xs={ratio} container sx={{display: {xs: 'none', sm: 'flex'}, justifyContent:'center',alignItems:'center'}}>
+                <Carousel animation="fade" sx={{height:'80%', width:'80%', p: 3}}>
+                    {coverImages.map((el, index) => {
+                        return (
+                            <CardMedia
+                                // sx={{p: 3, maxWidth: '80%'}}
+                                key={index}
+                                component="img"
+                                alt="movie cover"
+                                image={el}
+                            />
+                        )
+                    })}
+                </Carousel>
+            </Grid>
         )
     } else {
         return (
-            <CardMedia
-                sx={{p: 3}}
-                component="img"
-                alt="movie cover"
-                image={coverImages[0]}
-            />
+            <Grid xs={ratio} container sx={{display: {xs: 'none', sm: 'flex'}, justifyContent:'center',alignItems:'center'}}>
+                <CardMedia
+                    sx={{maxWidth: '80%', p: 3}}
+                    component="img"
+                    alt="movie cover"
+                    image={coverImages[0]}
+                />
+            </Grid>
         )
     }
 }
 
-export const CoverImageMedia = ({coverImages}) => {
+export const CoverImageMedia = ({coverImages, ratio}) => {
     return (
-        <div className="ProductDetails">
-            <CoverImageMediaWrapper coverImages={coverImages} />
-        </div>
+        <CoverImageMediaWrapper coverImages={coverImages} ratio={ratio}/>
     )
 }

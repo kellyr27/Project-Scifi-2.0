@@ -23,9 +23,7 @@ export default function TvCard(props) {
   return (
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2} sx={{pl: 2.5, pr: 2.5}}>
-        <Grid xs={5} sx={{display: {xs: 'none', sm: 'block'}}}>
-          <CoverImageMedia coverImages={tvShow.coverImages}/>
-        </Grid>
+        <CoverImageMedia coverImages={tvShow.coverImages} ratio={4}/>
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>
             <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1}}>

@@ -15,9 +15,7 @@ export default function BookCard(props) {
   return (
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2} sx={{pl: 2.5, pr: 2.5}}>
-        <Grid xs={3} sx={{display: {xs: 'none', sm: 'block'}}}>
-          <CoverImageMedia coverImages={book.coverImages}/>
-        </Grid>
+        <CoverImageMedia coverImages={book.coverImages} ratio={3}/>
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>
             <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1}}>

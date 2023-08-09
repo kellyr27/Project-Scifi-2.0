@@ -61,7 +61,7 @@ const ListDisplay = () => {
 
     useEffect(() => {
         document.title = list.name
-    }, [])
+    }, [list])
 
     return (
         <Box >
