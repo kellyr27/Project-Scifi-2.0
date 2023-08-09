@@ -7,6 +7,7 @@ import TvCard from "./TvCard";
 import BookCard from "./BookCard";
 import { textToURL } from "../functions/database";
 import { lists as listsDatabase } from "../databases/lists";
+import { useEffect } from "react";
 
 const ListCards = ({listType, list}) => {
 
@@ -57,6 +58,10 @@ const matchListURLToId = (lists, url) => {
 const ListDisplay = () => {
     const {listTitle} = useParams()
     const list = matchListURLToId(listsDatabase, listTitle)
+
+    useEffect(() => {
+        document.title = list.name
+    }, [])
 
     return (
         <Box >

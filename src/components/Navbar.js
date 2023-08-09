@@ -43,9 +43,9 @@ export default function ButtonAppBar() {
             {/* <MenuIcon /> */}
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>Project Scifi</Typography>
-            <BasicMenu title="TV Lists" lists={listsByType['tv']} listType='tv'/>
-            <BasicMenu title="Movie Lists" lists={listsByType['movies']} listType='movies'/>
-            <BasicMenu title="Book Lists" lists={listsByType['books']} listType='books'/>
+          <BasicMenu title="TV Lists" lists={listsByType['tv']} listType='tv'/>
+          <BasicMenu title="Movie Lists" lists={listsByType['movies']} listType='movies'/>
+          <BasicMenu title="Book Lists" lists={listsByType['books']} listType='books'/>
         </Toolbar>
       </AppBar>
     </Box>

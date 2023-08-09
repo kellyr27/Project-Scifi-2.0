@@ -40,19 +40,17 @@ export const lists = [
         name: 'Best Scifi Graphic Novels and Comics',
         description: 'The best science fiction graphic novels and comic book series.',
         type: 'books',
-        list: [0, 1, 2]
+        list: [0,1,6,7,8,9,10,11,12,13,14,15]
     }, {
         name: 'Best Classic Scifi Books and Series',
         description: 'The best science fiction books and series released before 2000.',
         type: 'books',
-        list: [2, 2, 1]
+        list: [2,3,4,5,16,17,18,19,20,21,22,23,24,25,27,28,29,30,31,32,33]
+    }, {
+        name: 'Best Modern Scifi Books and Series',
+        description: 'The best science fiction books and series released after 2000.',
+        type: 'books',
+        list: [34,35,36,37,38,39,40,41,42,43,44,45]
     }
 
 ]
-
-// {
-//     name: '',
-//     description: '',
-//     type: '',
-//     list: []
-// }
