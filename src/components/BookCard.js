@@ -7,6 +7,13 @@ import {Box} from '@mui/system'
 import '../App.css';
 import { CoverImageMedia } from '../functions/database';
 
+const formatSubtitle = (numOfPages, author, releaseYears) => {
+  if (numOfPages) {
+    return `${numOfPages} pg · ${author} · ${releaseYears}`
+  } else {
+    return `${author} · ${releaseYears}`
+  }
+}
 
 export default function BookCard(props) {
   const bookId = props.bookId
@@ -22,11 +29,11 @@ export default function BookCard(props) {
               {book.titles.join(' · ')}
             </Typography>
             <Typography variant="subtitle1" component="div" align="center" sx={{mb: 2}}>
-              {`${book.author} · ${book.releaseYears}`}
+              {formatSubtitle(book.pages, book.author, book.releaseYears)}
             </Typography>
-            {/* <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2}}>
+            <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2}}>
               {book.genres.join(' · ')}
-            </Typography> */}
+            </Typography>
             <Typography variant="body1" sx={{mb: 3}}>
               {book.description}
             </Typography>

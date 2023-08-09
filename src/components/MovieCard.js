@@ -18,34 +18,6 @@ const formatRuntime = (runtimeMins) => {
   }
 }
 
-// function CoverImageMedia({coverImages}) {
-//   if (coverImages.length > 1) {
-//     return (
-//       <Carousel animation="fade">
-//         {coverImages.map((el, index) => {
-//           return (
-//             <CardMedia
-//               key={index}
-//               component="img"
-//               alt="movie cover"
-//               image={el}
-//             />
-//           )
-//         })}
-//       </Carousel>
-//     )
-//   } else {
-//     return (
-//       <CardMedia
-//         component="img"
-//         alt="movie cover"
-//         image={coverImages[0]}
-//       />
-//     )
-//   }
-// }
-
-
 export default function MovieCard(props) {
   const movieId = props.movieId
   const movie = movies[movieId]
