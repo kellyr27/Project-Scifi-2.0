@@ -1,7 +1,12 @@
 /**
- * Types
- * 1 - Indicates Single Movie
- * 2 - Indicates Multiple Movies (e.g. Sequels and Trilogies)
+ * Movie Schema
+ *  - titles
+ *  - runtime
+ *  - releaseYears
+ *  - genres
+ *  - description
+ *  - otherImages       
+ *  - coverImages
  */
 
 export const movies = {
@@ -933,13 +938,3 @@ export const movies = {
         coverImages: []
     }
 }
-
-// {
-//     titles: [''],
-//     runtime: null,
-//     releaseYears: null,
-//     genres: null,
-//     description: null,
-//     otherImages: [],
-//     coverImages: []
-// }

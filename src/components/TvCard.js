@@ -1,9 +1,8 @@
 import Typography from '@mui/material/Typography';
-import { Card, CardMedia, CardContent, CardActions, Button, Stack, Chip } from '@mui/material';
+import { Card, CardMedia, CardContent} from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Carousel from 'react-material-ui-carousel';
 import { tvShows } from '../databases/tvShows';
-import {Box} from '@mui/system'
 import '../App.css';
 import { CoverImageMedia } from '../functions/database';
 

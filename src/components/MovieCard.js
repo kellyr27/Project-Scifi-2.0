@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import { Card, CardMedia, CardContent, CardActions, Button, Stack, Chip } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Carousel from 'react-material-ui-carousel';
-import { movies } from '../databases/movies';
+import {movies as movieDatabase } from '../databases/movies';
 import {Box} from '@mui/system'
 import '../App.css';
 import { CoverImageMedia } from '../functions/database';
@@ -20,7 +20,7 @@ const formatRuntime = (runtimeMins) => {
 
 export default function MovieCard(props) {
   const movieId = props.movieId
-  const movie = movies[movieId]
+  const movie = movieDatabase[movieId]
 
   return (
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>

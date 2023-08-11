@@ -35,7 +35,7 @@ export const lists = [
         name: 'Best Scifi TV Shows of All Time',
         description: 'The best science fiction tv series of all time.',
         type: 'tv',
-        list: [2,7,1,6, 0,3,4,5,8,9,10,11]
+        list: [2,7,1,6,5,0,3,8,9,10,4, 11]
     }, {
         name: 'Best Scifi Graphic Novels and Comics',
         description: 'The best science fiction graphic novels and comic book series.',

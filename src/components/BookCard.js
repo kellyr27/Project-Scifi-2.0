@@ -3,7 +3,7 @@ import { Card, CardContent, } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import books from '../databases/books';
 import '../App.css';
-import { CoverImageMedia } from '../functions/database';
+import { CoverImageMedia, CoverImageMedia2 } from '../functions/database';
 
 const formatSubtitle = (numOfPages, author, releaseYears) => {
   if (numOfPages) {
@@ -19,6 +19,7 @@ export default function BookCard(props) {
 
   return (
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>
+      <CoverImageMedia2 coverImages={book.coverImages} />
       <Grid container spacing={4} sx={{pl: 2.5, pr: 2.5}}>
         <CoverImageMedia coverImages={book.coverImages} ratio={3}/>
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
