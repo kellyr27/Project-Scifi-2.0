@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Box sx={{ bgcolor: '#EFE6DD' }}>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" disableGutters>
           <App />
         </Container>
       </Box>

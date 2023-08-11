@@ -24,7 +24,6 @@ export default function ButtonAppBar() {
             alt="Logo"
             src="/logo2.png"
           />
-          {/* <img src="/logo.png" alt="image" /> */}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>Project Scifi</Typography>
           <BasicMenu title="TV Lists" lists={listsByType['tv']} listType='tv'/>
           <BasicMenu title="Movie Lists" lists={listsByType['movies']} listType='movies'/>

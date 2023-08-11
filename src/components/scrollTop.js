@@ -6,6 +6,7 @@ import {
 } from "@mui/material";
 import { KeyboardArrowUp } from "@mui/icons-material";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
+import { positions } from '@mui/system';
 
 function ScrollToTopFab() {
     // Use `window` instead of `body` as `document` will be `undefined` when the
@@ -28,10 +29,10 @@ function ScrollToTopFab() {
             position: "fixed",
             bottom: 32,
             right: 32,
-            zIndex: 1,
+            zIndex: 999999,
           }}
         >
-          <Fab
+          <Fab 
             onClick={scrollToTop}
             color="primary"
             size="small"

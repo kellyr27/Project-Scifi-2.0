@@ -19,7 +19,11 @@ import ScrollTop from './components/scrollTop';
 const customTheme = createTheme({
   typography: {
     // "fontFamily": `"Roboto", "Helvetica", "Arial", sans-serif`,
+  },
+  palette: {
+    // primary: {main: '#7EBDC2', contrast: '#BB4430'}
   }
+
 })
 
 
@@ -29,7 +33,7 @@ function App() {
   return (
     <>
     <ThemeProvider theme={customTheme}>
-        <ScrollTop />
+        <ScrollTop/>
         <ButtonAppBar />
         <Routes>
           {/* <Route path="/" element={<Home/>}/> */}
