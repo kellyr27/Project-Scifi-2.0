@@ -127,12 +127,12 @@ export const tvShows = {
         coverImages: []
     },
     6: {
-        title: '',
-        numOfSeasons: null,
-        releaseYears: '',
-        genres: [],
-        description: ``,
-        otherImages: [],
-        coverImages: []
+        title: 'Rick and Morty',
+        numOfSeasons: 6,
+        releaseYears: '2013 - ',
+        genres: ["Animation", "Comedy", "Science Fiction", "Fantasy", "Action", "Adventure"],
+        description: `"Rick and Morty" is a subversive sci-fi comedy. Mad scientist Rick drags his reluctant grandson Morty into wild, universe-hopping adventures. The series combines raunchy humor, cosmic exploration, and philosophical musings, crafting a wildly imaginative and thought-provoking narrative that challenges conventions and tickles the intellect in equal measure.`,
+        otherImages: ['/img/tvShows/6LfVuZBiOOCtqch5Ukspjb9y0EB.jpg','/img/tvShows/sm4AyfV0XfzflSSx9ZBPJ6BWFni.jpg','/img/tvShows/aODdjZBuKPJau7YdsdcLvjfROp1.jpg'],
+        coverImages: ['/img/tvShows/cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg']
     },
 }

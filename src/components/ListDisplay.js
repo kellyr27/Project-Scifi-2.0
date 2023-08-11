@@ -17,7 +17,7 @@ import ScrollTop from "./scrollTop";
 const ListCards = ({listType, list}) => {
 
     // Randomize List Order
-    list = list.sort((a, b) => 0.5 - Math.random());
+    // list = list.sort((a, b) => 0.5 - Math.random());
 
     if (listType === 'movies') {
         return (

@@ -7,7 +7,7 @@
  * 5 - Best of the Author
  */
 
-export const books = {
+const books = {
     0: {
         titles: ['Bone'],
         author: 'Jeff Smith',
@@ -423,3 +423,5 @@ export const books = {
         coverImages: [""]
     }
 }
+
+export default books
