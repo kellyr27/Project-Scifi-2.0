@@ -4,11 +4,17 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ButtonAppBar from './components/Navbar';
 import ListDisplay from './components/ListDisplay';
-import { Container } from '@mui/material';
+import { Container, Fade, Box, Fab, Zoom } from '@mui/material';
 import { lists } from './databases/lists';
 import { textToURL } from './functions/database';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
+import PropTypes from 'prop-types';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { KeyboardArrowUp } from "@mui/icons-material";
+import { useCallback } from 'react';
+import ScrollTop from './components/scrollTop';
 
 const customTheme = createTheme({
   typography: {
@@ -23,6 +29,7 @@ function App() {
   return (
     <>
     <ThemeProvider theme={customTheme}>
+        <ScrollTop />
         <ButtonAppBar />
         <Routes>
           {/* <Route path="/" element={<Home/>}/> */}
