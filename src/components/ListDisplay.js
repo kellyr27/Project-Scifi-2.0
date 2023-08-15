@@ -7,8 +7,9 @@ import TvCard from "./TvCard";
 import BookCard from "./BookCard";
 import { textToURL } from "../functions/database";
 import { lists as listsDatabase } from "../databases/lists";
-import React from "react";
+import React, { useEffect } from "react";
 import DocHead from "./DocHead";
+import { useCallback } from "react";
 
 
 const ListCards = ({listType, list}) => {
@@ -54,16 +55,20 @@ const matchListURLToId = (lists, url) => {
   }
 }
 
-
 const ListDisplay = (props) => {
     const {listTitle} = useParams()
     const list = matchListURLToId(listsDatabase, listTitle)
+
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    },[list])
 
     return (
         <>
             <DocHead title={list.name} description={list.description}/>
             <Box>
-                <Typography variant="h2" align="center" sx={{mt: 8, mb: 3, letterSpacing: 2}}>{list.name}</Typography>
+                <Typography variant="h2" align="center" sx={{mt: 8, mb: 3, letterSpacing: 2, fontWeight: 'medium'}}>{list.name}</Typography>
                 <Typography variant="subtitle1" align="center" sx={{mb: 7, fontStyle: 'italic',letterSpacing: 0.5}}>{list.description}</Typography>
                 <Stack spacing={2} display="flex" alignItems="center" sx={{pb: 30}}>
                     <ListCards listType={list.type} list={list.list}/>
