@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography';
 import { Card, CardContent, } from '@mui/material';
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Unstable_Grid2';
 import books from '../databases/books';
 import '../App.css';
 import { CoverImageMedia, CoverImageMedia2 } from '../functions/database';

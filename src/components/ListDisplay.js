@@ -1,20 +1,18 @@
 import MovieCard from "./MovieCard"
 import Stack from '@mui/material/Stack'
 import { Typography } from "@mui/material"
-import { useLocation, useParams } from "react-router-dom"
-import { Box, Fade, Fab, Zoom } from '@mui/material';
+import { useParams } from "react-router-dom"
+import { Box } from '@mui/material';
 import TvCard from "./TvCard";
 import BookCard from "./BookCard";
 import { textToURL } from "../functions/database";
 import { lists as listsDatabase } from "../databases/lists";
 import { useEffect } from "react";
 import React from "react";
+import DocHead from "./DocHead";
 
 
 const ListCards = ({listType, list}) => {
-
-    // Randomize List Order
-    // list = list.sort((a, b) => 0.5 - Math.random());
 
     if (listType === 'movies') {
         return (
@@ -62,12 +60,9 @@ const ListDisplay = (props) => {
     const {listTitle} = useParams()
     const list = matchListURLToId(listsDatabase, listTitle)
 
-    useEffect(() => {
-        document.title = list.name
-    }, [list])
-
     return (
         <>
+            <DocHead title={list.name} description={list.description}/>
             <Box>
                 <Typography variant="h2" align="center" sx={{mt: 8, mb: 3}}>{list.name}</Typography>
                 <Typography variant="subtitle1" align="center" sx={{mb: 7}}>{list.description}</Typography>
