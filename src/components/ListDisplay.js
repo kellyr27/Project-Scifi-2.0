@@ -7,7 +7,6 @@ import TvCard from "./TvCard";
 import BookCard from "./BookCard";
 import { textToURL } from "../functions/database";
 import { lists as listsDatabase } from "../databases/lists";
-import { useEffect } from "react";
 import React from "react";
 import DocHead from "./DocHead";
 

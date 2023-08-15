@@ -25,7 +25,7 @@ export default function MovieCard(props) {
   return (
     <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2' }}>
       <Grid container spacing={2} sx={{pl: 2.5, pr: 2.5}}>
-        <CoverImageMedia coverImages={movie.coverImages} ratio={4}/>
+        <CoverImageMedia coverImages={movie.coverImages} ratio={4} altText="Movie covers" />
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>
             <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1}}>

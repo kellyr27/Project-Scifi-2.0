@@ -25,8 +25,7 @@ export const textToURL = (text) => {
     return text.replaceAll(' ', '-').toLowerCase()
 }
 
-// TODO - Change ALT to an prop
-const CoverImageMediaWrapper = ({coverImages, ratio}) => {
+export const CoverImageMedia = ({coverImages, ratio, altText}) => {
     if (coverImages.length > 1) {
         return (
             <Grid xs={ratio} container sx={{display: {xs: 'none', sm: 'flex'}, justifyContent:'center',alignItems:'center'}}>
@@ -36,7 +35,7 @@ const CoverImageMediaWrapper = ({coverImages, ratio}) => {
                             <CardMedia
                                 key={index}
                                 component="img"
-                                alt="movie cover"
+                                alt={altText}
                                 image={el}
                                 sx={{width: '100%'}}
                             />
@@ -51,7 +50,7 @@ const CoverImageMediaWrapper = ({coverImages, ratio}) => {
                 <CardMedia
                     sx={{maxWidth: '80%', p: 5}}
                     component="img"
-                    alt="movie cover"
+                    alt={altText}
                     image={coverImages[0]}
                 />
             </Grid>
@@ -59,14 +58,7 @@ const CoverImageMediaWrapper = ({coverImages, ratio}) => {
     }
 }
 
-export const CoverImageMedia = ({coverImages, ratio}) => {
-    return (
-        <CoverImageMediaWrapper coverImages={coverImages} ratio={ratio}/>
-    )
-}
-
-// TODO - Change ALT to an prop
-const CoverImageMediaWrapper2 = ({coverImages, ratio}) => {
+export const CoverImageMedia2 = ({coverImages, ratio, altText}) => {
     if (coverImages.length > 1) {
         return (
             <Grid container sx={{display: {xs: 'flex', sm: 'none'}, justifyContent:'center',alignItems:'center'}}>
@@ -76,7 +68,7 @@ const CoverImageMediaWrapper2 = ({coverImages, ratio}) => {
                             <CardMedia
                                 key={index}
                                 component="img"
-                                alt="movie cover"
+                                alt={altText}
                                 image={el}
                                 sx={{minWidth: '150px'}}
                             />
@@ -91,16 +83,10 @@ const CoverImageMediaWrapper2 = ({coverImages, ratio}) => {
                 <CardMedia
                     sx={{maxWidth: '150px', pt: 2}}
                     component="img"
-                    alt="movie cover"
+                    alt={altText}
                     image={coverImages[0]}
                 />
             </Grid>
         )
     }
-}
-
-export const CoverImageMedia2 = ({coverImages, ratio}) => {
-    return (
-        <CoverImageMediaWrapper2 coverImages={coverImages} />
-    )
 }
