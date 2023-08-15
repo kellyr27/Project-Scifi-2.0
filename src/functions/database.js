@@ -70,7 +70,7 @@ const CoverImageMediaWrapper2 = ({coverImages, ratio}) => {
     if (coverImages.length > 1) {
         return (
             <Grid container sx={{display: {xs: 'flex', sm: 'none'}, justifyContent:'center',alignItems:'center'}}>
-                <Carousel animation="fade" sx={{display: 'block', minWidth: '150px', p: 5}}>
+                <Carousel animation="fade" sx={{display: 'block', minWidth: '150px', pt: 2}}>
                     {coverImages.map((el, index) => {
                         return (
                             <CardMedia

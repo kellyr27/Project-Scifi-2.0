@@ -8,11 +8,8 @@ import BookCard from "./BookCard";
 import { textToURL } from "../functions/database";
 import { lists as listsDatabase } from "../databases/lists";
 import { useEffect } from "react";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { KeyboardArrowUp } from "@mui/icons-material";
 import React from "react";
-import ScrollTop from "./scrollTop";
+
 
 const ListCards = ({listType, list}) => {
 

@@ -1,12 +1,3 @@
-/**
- * Types
- * 1 - Single Volume Graphic Novel
- * 2 - Multi Volume Graphic Novel
- * 3 - Single Volume Book (Stand-alone)
- * 4 - Multi Volume Book Series
- * 5 - Best of the Author
- */
-
 const books = {
     0: {
         titles: ['Bone'],
@@ -411,7 +402,7 @@ const books = {
         genres: ['Science Fiction'],
         pages: 364,
         description: `"Spin" is a captivating sci-fi. An alien membrane envelops Earth, causing time dilation and celestial changes. Robert Charles Wilson's novel explores human adaptation, love, and the enigmatic "Spin," unraveling the mysteries of the cosmos. The narrative delivers a thought-provoking exploration of existential questions within a mesmerizing and evolving universe.`,
-        coverImages: ["/img/books/The_Giver_first_edition_1993.jpg"]
+        coverImages: ["/img/books/7ifrxLjZSrabiiXB7TzFUHToH8H.jpg"]
     },
     46: {
         titles: [],
