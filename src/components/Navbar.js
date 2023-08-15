@@ -12,21 +12,19 @@ export default function ButtonAppBar() {
   const listsByType = splitListsByType(databaseLists)
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{bgcolor: '#231F20'}} >
-        <Toolbar>
-          <Box
-            component="img"
-            sx={{ height: 54 }}
-            alt="Logo"
-            src="/logo2.png"
-          />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>Project Scifi</Typography>
-          <BasicMenu title="TV Lists" lists={listsByType['tv']} listType='tv'/>
-          <BasicMenu title="Movie Lists" lists={listsByType['movies']} listType='movies'/>
-          <BasicMenu title="Book Lists" lists={listsByType['books']} listType='books'/>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <AppBar position="sticky" sx={{bgcolor: '#231F20'}} >
+      <Toolbar>
+        <Box
+          component="img"
+          sx={{ height: 54 }}
+          alt="Logo"
+          src="/logo2.png"
+        />
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>Project Scifi</Typography>
+        <BasicMenu title="TV Lists" lists={listsByType['tv']} listType='tv'/>
+        <BasicMenu title="Movie Lists" lists={listsByType['movies']} listType='movies'/>
+        <BasicMenu title="Book Lists" lists={listsByType['books']} listType='books'/>
+      </Toolbar>
+    </AppBar>
   );
 }
