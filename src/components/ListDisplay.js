@@ -9,7 +9,6 @@ import { textToURL } from "../functions/database";
 import { lists as listsDatabase } from "../databases/lists";
 import React, { useEffect } from "react";
 import DocHead from "./DocHead";
-import { useCallback } from "react";
 
 
 const ListCards = ({listType, list}) => {
