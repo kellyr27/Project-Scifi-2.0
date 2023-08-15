@@ -29,7 +29,6 @@ function App() {
         <ScrollTop/>
         <ButtonAppBar />
         <Routes>
-          {/* <Route path="/" element={<Home/>}/> */}
           <Route path="/books/:listTitle" element={<ListDisplay/>}/>
           <Route path="/movies/:listTitle" element={<ListDisplay/>} />
           <Route path="/tv/:listTitle" element={<ListDisplay/>} />

@@ -24,13 +24,13 @@ export default function BookCard(props) {
         <CoverImageMedia coverImages={book.coverImages} ratio={3} altText="Book covers" />
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>
-            <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1}}>
+            <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1, fontWeight: 'medium', letterSpacing: 2}}>
               {book.titles.join(' · ')}
             </Typography>
-            <Typography variant="subtitle1" component="div" align="center" sx={{mb: 2}}>
+            <Typography variant="subtitle1" component="div" align="center" sx={{mb: 1}}>
               {formatSubtitle(book.pages, book.author, book.releaseYears)}
             </Typography>
-            <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2}}>
+            <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2, fontStyle: 'oblique'}}>
               {book.genres.join(' · ')}
             </Typography>
             <Typography variant="body1" sx={{mb: 3}}>

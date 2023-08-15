@@ -1,9 +1,8 @@
 import Typography from '@mui/material/Typography';
-import { Card, CardMedia, CardContent, CardActions, Button, Stack, Chip } from '@mui/material';
+import { Card, CardMedia, CardContent } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Carousel from 'react-material-ui-carousel';
 import {movies as movieDatabase } from '../databases/movies';
-import {Box} from '@mui/system'
 import '../App.css';
 import { CoverImageMedia } from '../functions/database';
 
@@ -28,13 +27,13 @@ export default function MovieCard(props) {
         <CoverImageMedia coverImages={movie.coverImages} ratio={4} altText="Movie covers" />
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>
-            <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1}}>
+            <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1, fontWeight: 'medium', letterSpacing: 2}}>
               {movie.titles.join(' · ')}
             </Typography>
-            <Typography variant="subtitle1" component="div" align="center" sx={{mb: 0}}>
+            <Typography variant="subtitle1" component="div" align="center" sx={{mb: 1}}>
               {movie.runtime ? `${movie.releaseYears}, ${formatRuntime(movie.runtime)}` : `${movie.releaseYears}`}
             </Typography>
-            <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2}}>
+            <Typography variant="subtitle2" component="div" align="center" sx={{mb: 2, fontStyle: 'oblique'}}>
               {movie.genres.join(' · ')}
             </Typography>
             <Typography variant="body1" sx={{mb: 3}}>

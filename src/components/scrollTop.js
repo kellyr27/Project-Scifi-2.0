@@ -33,9 +33,9 @@ function ScrollToTopFab() {
         >
           <Fab 
             onClick={scrollToTop}
-            color="primary"
             size="small"
             aria-label="Scroll back to top"
+            sx={{ bgcolor: '#7EBDC2' }}
           >
             <KeyboardArrowUp fontSize="medium" />
           </Fab>
