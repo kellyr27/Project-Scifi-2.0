@@ -16,12 +16,12 @@ export default function ButtonAppBar() {
       <Toolbar>
         <Box
           component="img"
-          sx={{ height: 54 }}
+          sx={{ height: 54, mr: 2 }}
           alt="Logo"
-          src="/logo2.png"
+          src="/logo.png"
         />
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>Project Scifi</Typography>
-        <BasicMenu title="TV Lists" lists={listsByType['tv']} listType='tv'/>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'medium',letterSpacing: -0.5, fontFamily: 'monospace'  }}>Project Scifi</Typography>
+        <BasicMenu title="TV Lists"  lists={listsByType['tv']} listType='tv'/>
         <BasicMenu title="Movie Lists" lists={listsByType['movies']} listType='movies'/>
         <BasicMenu title="Book Lists" lists={listsByType['books']} listType='books'/>
       </Toolbar>
