@@ -18,7 +18,7 @@ const ListCards = ({listType, list}) => {
             <>
                 {list.map((el, index) => {
                     return (
-                        <MovieCard key={index} movieId={el}/>
+                        <MovieCard key={index} movieId={el} />
                     )
                 })}
             </>
@@ -69,7 +69,7 @@ const ListDisplay = (props) => {
             <Box>
                 <Typography variant="h2" align="center" sx={{mt: 8, mb: 3, letterSpacing: 2, fontWeight: 'medium'}}>{list.name}</Typography>
                 <Typography variant="subtitle1" align="center" sx={{mb: 7, fontStyle: 'italic',letterSpacing: 0.5}}>{list.description}</Typography>
-                <Stack spacing={2} display="flex" alignItems="center" sx={{pb: 30}}>
+                <Stack spacing={2} display="flex" alignItems="center" sx={{pb: 30, m: 1.5}}>
                     <ListCards listType={list.type} list={list.list}/>
                 </Stack>
             </Box>
