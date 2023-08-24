@@ -22,7 +22,7 @@ export default function MovieCard(props) {
   const movie = movieDatabase[movieId]
 
   return (
-    <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2', borderRadius: '1%' }}>
+    <Card sx={{ maxWidth: 1000, backgroundColor: 'rgba(243, 233, 162, 0.7)', borderRadius: '1%' }}>
       <Grid container spacing={2} sx={{pl: 2.5, pr: 2.5}}>
         <CoverImageMedia coverImages={movie.coverImages} ratio={4} altText="Movie covers" />
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>

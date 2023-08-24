@@ -12,7 +12,7 @@ export default function ButtonAppBar() {
   const listsByType = splitListsByType(databaseLists)
 
   return (
-    <AppBar position="sticky" sx={{bgcolor: '#231F20'}} >
+    <AppBar position="sticky" sx={{bgcolor: 'rgba(35,31,32, 0.95)'}} >
       <Toolbar>
         <Box
           component="img"

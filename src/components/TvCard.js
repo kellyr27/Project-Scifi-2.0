@@ -20,12 +20,12 @@ export default function TvCard(props) {
   const tvShow = tvShows[tvShowId]
 
   return (
-    <Card sx={{ maxWidth: 1000, backgroundColor: '#F3DFA2', borderRadius: '1%' }}>
+    <Card sx={{ maxWidth: 1000, backgroundColor: 'rgba(243, 233, 162, 0.7)', borderRadius: '1%' }}>
       <Grid container spacing={2} sx={{pl: 2.5, pr: 2.5}}>
         <CoverImageMedia coverImages={tvShow.coverImages} ratio={4} altText="TV show covers" />
         <Grid xs sx={{pl: 2.5, pr: 2.5}}>
           <CardContent>
-            <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1, fontWeight: 'medium', letterSpacing: 2}} >
+            <Typography variant="h4" component="div" align="center" sx={{mt: 1, mb: 1, fontWeight: 'bold', letterSpacing: 2}} >
               {tvShow.title}
             </Typography>
             <Typography variant="subtitle1" component="div" align="center" sx={{mb: 1}}>
