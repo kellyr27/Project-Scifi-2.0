@@ -26,7 +26,7 @@ export default function BasicMenu(props) {
         aria-expanded={open ? 'true' : undefined}
         color="inherit"
         onClick={handleClick}
-        sx={{textTransform: 'capitalize', fontWeight: 'light', letterSpacing: 3, fontSize: 15}}
+        sx={{textTransform: 'capitalize', fontWeight: 'medium', letterSpacing: 3, fontSize: 15}}
       >
         {title}
         
