@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Container } from '@mui/material';
 import { Box } from '@mui/material';
 import { Canvas } from '@react-three/fiber';
-import { Html, Stars } from '@react-three/drei';
+import { Stars } from '@react-three/drei';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
