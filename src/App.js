@@ -8,6 +8,8 @@ import { textToURL } from './functions/database';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 import ScrollTop from './components/scrollTop';
+import { Canvas } from '@react-three/fiber';
+import { Html } from '@react-three/drei';
 
 const customTheme = createTheme({
   typography: {
@@ -26,14 +28,14 @@ function App() {
   return (
     <>
     <ThemeProvider theme={customTheme}>
-        <ScrollTop/>
-        <ButtonAppBar />
-        <Routes>
-          <Route path="/books/:listTitle" element={<ListDisplay/>}/>
-          <Route path="/movies/:listTitle" element={<ListDisplay/>} />
-          <Route path="/tv/:listTitle" element={<ListDisplay/>} />
-          <Route path="*" element={<Navigate to={`/${firstList.type}/${textToURL(firstList.name)}`} />} />
-        </Routes>
+      <ScrollTop/>
+      <ButtonAppBar />
+      <Routes>
+        <Route path="/books/:listTitle" element={<ListDisplay/>}/>
+        <Route path="/movies/:listTitle" element={<ListDisplay/>} />
+        <Route path="/tv/:listTitle" element={<ListDisplay/>} />
+        <Route path="*" element={<Navigate to={`/${firstList.type}/${textToURL(firstList.name)}`} />} />
+      </Routes>
       </ThemeProvider>
     </>
   );
